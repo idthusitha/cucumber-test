@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 275378221,
+              "duration": 254223767,
               "status": "passed"
             },
             "line": 4,
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 163526,
+              "duration": 121794,
               "status": "passed"
             },
             "line": 5,
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9242875,
+              "duration": 11632074,
               "status": "passed"
             },
             "line": 8,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 126955,
+              "duration": 126214,
               "status": "passed"
             },
             "line": 9,
@@ -112,7 +112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8504123,
+              "duration": 11680154,
               "status": "passed"
             },
             "line": 12,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 85641,
+              "duration": 88255,
               "status": "passed"
             },
             "line": 13,
@@ -162,7 +162,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10746744,
+              "duration": 11017124,
               "status": "passed"
             },
             "line": 16,
@@ -184,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 101855,
+              "duration": 109636,
               "status": "passed"
             },
             "line": 17,
@@ -212,7 +212,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8145358,
+              "duration": 23121149,
               "status": "passed"
             },
             "line": 16,
@@ -234,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 91232,
+              "duration": 89734,
               "status": "passed"
             },
             "line": 17,
@@ -262,7 +262,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19673172,
+              "duration": 8474482,
               "status": "passed"
             },
             "line": 16,
@@ -284,7 +284,7 @@
           },
           {
             "result": {
-              "duration": 76786,
+              "duration": 110471,
               "status": "passed"
             },
             "line": 17,
@@ -323,9 +323,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.IllegalArgumentException: URI is not absolute\n\tat java.net.URI.toURL(URI.java:1088)\n\tat org.springframework.http.client.SimpleClientHttpRequestFactory.createRequest(SimpleClientHttpRequestFactory.java:145)\n\tat org.springframework.http.client.support.HttpAccessor.createRequest(HttpAccessor.java:124)\n\tat org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:738)\n\tat org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)\n\tat org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)\n\tat com.cucumbertest.cucumbertest.calculator.CalculatorStepDefinitions.the_client_calls_health(CalculatorStepDefinitions.java:53)\n\tat ✽.the client calls /health(file:src/test/resources/features/health.feature:3)\n",
-              "duration": 5011940,
-              "status": "failed"
+              "duration": 16037072,
+              "status": "passed"
             },
             "line": 3,
             "name": "the client calls /health",
@@ -336,8 +335,8 @@
           },
           {
             "result": {
-              "duration": 15928,
-              "status": "skipped"
+              "duration": 156950,
+              "status": "passed"
             },
             "line": 4,
             "name": "the client receives response status code of 200",

@@ -1,4 +1,4 @@
-package com.cucumbertest.cucumbertest.calculator;
+package com.cucumbertest.cucumbertest.helth;
 
 import static org.junit.Assert.assertEquals;
 

@@ -7,3 +7,27 @@ Acceptance test ensures that the right things are built. Automated acceptance te
 * Given : This indicates the prior state of the system. For example, a user must be logged in to perform activities within the site.
 * When : This is the specific activity carried out or the functionality tested.
 * Then: This is our assert/verification scenario which is the result we expect out of the testing.
+
+
+
+### Run test
+	git clone https://github.com/idthusitha/cucumber-test.git
+	cd {{ WORKSPACE }}/cucumber-test 
+	gradle clean build
+
+
+### Cucumber feature report link
+
+	file://{{ WORKSPACE }}/cucumber-test/target/html/cucumber-html-reports/overview-features.html
+	
+![Test Image 1](https://github.com/idthusitha/cucumber-test/blob/master/doc/cucumber_report.png)
+
+
+### Cucumber Steps Definition report link
+
+![Test Image 1](https://github.com/idthusitha/cucumber-test/blob/master/doc/steps_definitions.png)
+	
+
+
+### Basic report link
+	file://{{ WORKSPACE }}/cucumber-test/build/reports/tests/test/index.html

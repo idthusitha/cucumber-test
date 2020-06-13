@@ -1,0 +1,365 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "client wants to add two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-add-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 275378221,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client calls /calc/add with values 1 and 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 39
+                },
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_arithmetic_add_with_values_and(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163526,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives answer as 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "client wants to subtract two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-subtract-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9242875,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls /calc/sub with values 5 and 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 39
+                },
+                {
+                  "val": "3",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_calc_sub_with_values_and(Integer,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126955,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client receives answer as 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "client wants to divide two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-divide-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8504123,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the client calls /calc/div with values 6 and 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 39
+                },
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_calc_div_with_values_and(Integer,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85641,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the client receives answer as 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "client wants to multiply two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-multiply-two-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10746744,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the client calls /calc/mul with values 2 and 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 39
+                },
+                {
+                  "val": "3",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_calc_mul_with_values_and(Integer,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101855,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the client receives answer as 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "client wants to multiply two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-multiply-two-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8145358,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the client calls /calc/mul with values 4 and 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 39
+                },
+                {
+                  "val": "6",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_calc_mul_with_values_and(Integer,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91232,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the client receives answer as 24",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "client wants to multiply two numbers",
+        "description": "",
+        "id": "arithmetic-operations;client-wants-to-multiply-two-numbers;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19673172,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the client calls /calc/mul with values 7 and 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 39
+                },
+                {
+                  "val": "8",
+                  "offset": 45
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_calls_calc_mul_with_values_and(Integer,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76786,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the client receives answer as 56",
+            "match": {
+              "arguments": [
+                {
+                  "val": "56",
+                  "offset": 30
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_answer_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "arithmetic operations",
+    "description": "",
+    "id": "arithmetic-operations",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/calculator.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "client makes call to GET /health",
+        "description": "",
+        "id": "the-health-can-be-retrieved;client-makes-call-to-get-/health",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: URI is not absolute\n\tat java.net.URI.toURL(URI.java:1088)\n\tat org.springframework.http.client.SimpleClientHttpRequestFactory.createRequest(SimpleClientHttpRequestFactory.java:145)\n\tat org.springframework.http.client.support.HttpAccessor.createRequest(HttpAccessor.java:124)\n\tat org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:738)\n\tat org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677)\n\tat org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:345)\n\tat com.cucumbertest.cucumbertest.calculator.CalculatorStepDefinitions.the_client_calls_health(CalculatorStepDefinitions.java:53)\n\tat ✽.the client calls /health(file:src/test/resources/features/health.feature:3)\n",
+              "duration": 5011940,
+              "status": "failed"
+            },
+            "line": 3,
+            "name": "the client calls /health",
+            "match": {
+              "location": "CalculatorStepDefinitions.the_client_calls_health()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15928,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the client receives response status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "CalculatorStepDefinitions.the_client_receives_response_status_code_of(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "the health can be retrieved",
+    "description": "",
+    "id": "the-health-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/health.feature",
+    "tags": []
+  }
+]

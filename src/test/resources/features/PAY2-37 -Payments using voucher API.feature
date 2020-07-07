@@ -13,7 +13,7 @@ Feature: PAY2-37 -Payments using voucher API
   Scenario:2-37_TC001 Voucher Payment authorize request API-Positive Validation
 #    Given Customer Voucher related information at aeroCustomer
 #      | voucherCode | amount | consumerFirstName | consumerLastName | currency |
-#      | VH00987     | 2000   | Hellan            | Bot              | AED      |
+#      | VH00987123     | 2000   | Hellan            | Bot              | AED      |
     When VoucherAuthorizePay API request is invoked with below attributes to aeroPAY
     """
 {
@@ -23,7 +23,7 @@ Feature: PAY2-37 -Payments using voucher API
       "passengerVoucherRPH": "1",
       "passengerFirstName": "Hellan",
       "PassengerSecondName": "Bot",
-      "voucherCode": "VH00987",
+      "voucherCode": "VH00987123",
       "voucherRequestedAmount": 1500.00,
       "voucherAmountCurrencyCode": "AED"
     }
@@ -61,7 +61,7 @@ Feature: PAY2-37 -Payments using voucher API
       "passengerVoucherRPH": "",
       "passengerFirstName": "Hellan",
       "PassengerSecondName": "Bot",
-      "voucherCode": "VH00987",
+      "voucherCode": "VH00987123",
       "voucherRequestedAmount": 1500.00,
       "voucherAmountCurrencyCode": "AED"
     }
@@ -76,7 +76,7 @@ Feature: PAY2-37 -Payments using voucher API
   Scenario:2-37_TC003 Voucher Payment-Partial voucher payment
 #    Given Customer Voucher related information at aeroCustomer
 #      | voucherCode | amount | consumerFirstName | consumerLastName | currency |
-#      | VH00987     | 2000   | Hellan            | Bot              | AED      |
+#      | VH00987123     | 2000   | Hellan            | Bot              | AED      |
     When VoucherAuthorizePay API request is invoked with below attributes to aeroPAY
     """
 {
@@ -86,7 +86,7 @@ Feature: PAY2-37 -Payments using voucher API
       "passengerVoucherRPH": "1",
       "passengerFirstName": "Hellan",
       "PassengerSecondName": "Bot",
-      "voucherCode": "VH00987",
+      "voucherCode": "VH00987123",
       "voucherRequestedAmount": 2500.00,
       "voucherAmountCurrencyCode": "AED"
     }
@@ -256,7 +256,7 @@ Feature: PAY2-37 -Payments using voucher API
   Scenario:2-37_TC006 Voucher Payment E2E-Positive Flow
 #    Given Customer Voucher related information at aeroCustomer
 #      | voucherCode | amount | consumerFirstName | consumerLastName | currency |
-#      | VH00987     | 2000   | Hellan            | Bot              | AED      |
+#      | VH00987123     | 2000   | Hellan            | Bot              | AED      |
     When VoucherAuthorizePay API request is invoked with below attributes to aeroPAY
     """
 {
@@ -266,7 +266,7 @@ Feature: PAY2-37 -Payments using voucher API
       "passengerVoucherRPH": "1",
       "passengerFirstName": "Hellan",
       "PassengerSecondName": "Bot",
-      "voucherCode": "VH00987",
+      "voucherCode": "VH00987123",
       "voucherRequestedAmount": 1500.00,
       "voucherAmountCurrencyCode": "AED"
     }
@@ -357,7 +357,7 @@ Feature: PAY2-37 -Payments using voucher API
   Scenario:2-37_TC007 Voucher Payment E2E-Negative Flow-Error at aeroCustomer
 #    Given Customer Voucher related information at aeroCustomer
 #      | voucherCode | amount | consumerFirstName | consumerLastName | currency |
-#      | VH00987     | 2000   | Hellan            | Bot              | AED      |
+#      | VH00987123     | 2000   | Hellan            | Bot              | AED      |
     When VoucherAuthorizePay API request is invoked with below attributes to aeroPAY
     """
 {
@@ -367,7 +367,7 @@ Feature: PAY2-37 -Payments using voucher API
       "passengerVoucherRPH": "1",
       "passengerFirstName": "Hellan",
       "PassengerSecondName": "Bot",
-      "voucherCode": "VH00987",
+      "voucherCode": "VH00987123",
       "voucherRequestedAmount": 1500.00,
       "voucherAmountCurrencyCode": "AED"
     }

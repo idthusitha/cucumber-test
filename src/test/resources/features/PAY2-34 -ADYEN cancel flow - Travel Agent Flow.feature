@@ -7,7 +7,7 @@ Feature: PAY2-34 -ADYEN cancel flow - Travel Agent Flow
 #Scenario:2-34_TC004 CC Payment cancel_Negative flow-Not approved at payment gateway-When the channel is XBE
 #Scenario:2-34_TC005 CC Payment cancel_Resend the same cancel request which is already cancelled
 
-
+  @PAY2_34_ADYEN_cancel_flow_Travel_Agent_Flow
   Scenario Outline:2-34_TC001 CC Payment cancel_request API-Positive Validation
     Given Information of the Payment Reference ID for which cancel request has to be sent
       | paymentReferenceId                   | referenceId | Payment_Auth_Status   | Channel |
@@ -34,7 +34,7 @@ Feature: PAY2-34 -ADYEN cancel flow - Travel Agent Flow
   }
     """
     Then HTTPS status code should be "200"
-    And  API Response should have Below values
+    And  ADYEN cancel API Response should have Below values
     """
   {
   "paymentReferenceId": "<paymentReferenceId>",
@@ -53,7 +53,7 @@ Feature: PAY2-34 -ADYEN cancel flow - Travel Agent Flow
       | 2 | TC200       | 12ed1284-eac3-3104-8524-d917571007AA |                           |         |          |
       | 3 | TC201       | 12ed1284-eac3-3104-8524-d917571007AB |                           | GSA3456 | William  |
 
-
+  @PAY2_34_ADYEN_cancel_flow_Travel_Agent_Flow
   Scenario Outline:2-34_TC002 CC Payment cancel_request API-Negative Validation
     Given Information of the Payment Reference ID for which cancel request has to be sent
       | paymentReferenceId                   | referenceId | Payment_Auth_Status   | Channel |
@@ -121,7 +121,7 @@ Feature: PAY2-34 -ADYEN cancel flow - Travel Agent Flow
 #aeroPay send the blockCreditRollback request to aeroAgent through Kafka
 #Below response is sent from aeroPay to the consuming application
     Then HTTPS status code should be "200"
-    And  API Response should have Below values
+    And  ADYEN cancel API Response should have Below values
     """
   {
   "paymentReferenceId": "12ed1284-eac3-3104-8524-d917571007AA",
@@ -196,7 +196,7 @@ Feature: PAY2-34 -ADYEN cancel flow - Travel Agent Flow
     """
 #CCCancel API is idempotent based on reference ID and payment reference ID
     Then HTTPS status code should be "200"
-    And  API Response should have Below values
+    And  ADYEN cancel API Response should have Below values
     """
   {
   "paymentReferenceId": 12ed1284-eac3-3104-8524-d917571007LA",
